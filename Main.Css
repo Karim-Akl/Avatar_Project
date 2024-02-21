@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+*{
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0px;
+    padding: 0px;
+    
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: linear-gradient(to right 30%,#000 ,#00000038);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container{
+    background-image: linear-gradient(to right,#01022de5 ,#00000088),
+    url(./Imdge/80.webp);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.container:hover{
+    background-image: linear-gradient(to right,#01022de5 40%,transparent),
+    url(./Imdge/80.webp);
+    width: 100%;
+    height: 100%;
+    flex-wrap: nowrap;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+a{
+    color: rgb(222, 219, 214);
+    text-decoration: none;
+    list-style: none;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+    margin-top: 7px;
+
+
+}
+#logo{
+    width: 10%;
+    font-size: xx-large;
+    margin-left: 35px;
+
+
+}
+.nav{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+
+
+}
+.nav a:hover{
+    border-bottom: rgb(225, 221, 214) solid 2px;
+}
+
+.content{
+    width: 50%;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: end;
+    align-items: center;
+    margin-left:90px  ;
+    
+}
+h1{
+    font-size:70px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+}
+p{
+    color: white;
+    letter-spacing: 2px;
+    width: 350px;
+}
+button{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    padding: auto;
+    font-size: 15px;
+    margin:20px ;
+    margin-top: 30px;
+
+
+}
+button:hover{
+    border: whitesmoke solid 1px;
+    background-color: rgb(220, 202, 202,0.1);
+    color: whitesmoke;
+    font-size: large;
+    cursor: pointer;
+}
+#more{
+    color: hwb(0 6% 9% / 0.807);
+    text-decoration: underline royalblue;
+}
+.par{
+    display: none;
+    position: absolute;
+    top: 25px;
+    width: 35px;
+    right: 40px;
+
+}
+
+@media screen and (max-width:600px){
+    .par{
+        display: block;
+    }
+    .nav{
+        top: 0px;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color:rgba(red, green, blue, 0.1);
+        backdrop-filter: blur(7px);
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all 1s ease;
+    } 
+    .nav.mobile-menu{
+        margin-left: 0;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    li{
+        margin: 20px;  
+        font-size: x-large;
+
+    }
+    #logo{
+        margin-top: 15px;
+        display: inline-block;
+        width: 15%;
+
+        font-size: 35px;  
+    }
+    .content{
+
+        display: flex;
+        text-align: center;
+    }
+} 

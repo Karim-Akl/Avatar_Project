@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVATAR.COM</title>
+    <link rel="stylesheet" href="Main.Css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a  id="logo" href="#"> AVATAR </a>
+                <ul class="nav">
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"><li>Clans</li></a>
+                    <a href="#"><li>Photos</li></a>
+                    <a href="#"><li>Views</li></a>
+                    <a href="#"><li>About</li></a>
+                </ul>
+                <img class="par" src="./Imdge/density_medium_FILL0_wght400_GRAD0_opsz24.svg"alt="not found">
+            
+        </header>
+        <div class="content">
+            <h1 id="h1">avatar</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia recusandae voluptatum totam sequi impedit sed ab! Repudiandae cumque recusandae velit! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque, repellat <a id="more" href="#">more</a></p>
+            
+            <button>Click Here</button>
+        </div>
+    </div>
+    <script>
+        const menuHamburger = document.querySelector(".par")
+        const navLinks = document.querySelector(".nav")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+</script>
+</body>
+</html>
